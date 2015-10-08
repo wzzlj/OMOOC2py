@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [教学反转](0MOOC/README.md)
-   * 0wd0
+   * [0wd0](0MOOC/0wd0.md)
 * [基础旋进](1sTry/README.md)
 * [迭代作品](2nDev/README.md)
 * [人生首秀](3rDemo/README.md)
