@@ -1,17 +1,17 @@
-# 有关
-~ 汇集这部私人教程未尽体验
-
-## TODO
-
-
-## 参考
-
-- [图灵社区 : 阅读 : 使用GitBook平台发布电子书](http://www.ituring.com.cn/article/127744)
-- [使用Gitbook来编写你的Api文档 « 悟道集](http://tao.logdown.com/posts/243192-use-gitbook-to-write-api-documentation)
+#关于我
+-
+I'm wzzlj.
+![TOUXIANG](http://7xn3v1.com1.z0.glb.clouddn.com/IMG_1765.jpg)
 
 
-## (￣▽￣)
+###我的经历
+- 我出生和成长在**`温州`**  
+- 我在**`厦门`**读的大学（就是厦大啦>.<）  
+- 毕业后在**`南昌`**陆军学院学习步兵指挥专业
+- 分配到**`舟山`**警备区海防团
+- 复员之后回到**`温州`**
+- 平面设计和摄影是我的兴趣和爱好
+- 外汇投资是我的谋生手段
+- 热衷于学习新的知识和技巧
 
-- 150924 ZQ 清理为学员模板
-- 150317 迁移用 开智官方 gitbook 身份
-- 150316 ZQ 创建
+联系:[xmuzlj@gmail.com](mailto:xmuzlj@gmail.com)
