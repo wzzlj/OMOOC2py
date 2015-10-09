@@ -3,8 +3,8 @@
 * [Introduction](README.md)
 * [教学反转](0MOOC/README.md)
    * [0wd0](0MOOC/0wd0.md)
-       * [1.Gitbook生态圈](0MOOC/gitbooksheng_tai_quan.md)
-           * 1.1.gitbook与github的羁绊
+       * [Gitbook生态圈](0MOOC/gitbooksheng_tai_quan.md)
+           * gitbook与github的羁绊
 * [基础旋进](1sTry/README.md)
 * [迭代作品](2nDev/README.md)
 * [人生首秀](3rDemo/README.md)
