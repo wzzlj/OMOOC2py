@@ -1,4 +1,4 @@
-# DISQUS 私人教程
+# 为gitbook加上评论功能--DISQUS
 
 ## 背景
 
@@ -24,7 +24,7 @@ Disqus 是一个非常流行的为网站集成评论系统的工具，同样，g
     }  
 }
 ````
-注意：上面的 shortName 的值就是你在 disqus 上创建的 website 获得的唯一关键字。
+注意：将上面的 yourshortName 更改为你在 disqus 上创建的 website 获得的唯一关键字。
 
 ## 使用
 
@@ -33,7 +33,7 @@ Disqus 是一个非常流行的为网站集成评论系统的工具，同样，g
 
 ## 体验
 
-原本gitbook的载入速度就有点捉鸡,再加载以下disqus就更慢了...
+原本gitbook的载入速度就有点捉鸡,再加载一下disqus就更慢了...
  
   
    

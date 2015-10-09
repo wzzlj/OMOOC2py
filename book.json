@@ -1,8 +1,21 @@
 {
+    "author": "Zhu Lijian<xmuzlj@gmail.com>",
+    "description": "Zhu Lijian在OMOOC2py",
+    "extension": null,
+    "generator": "site",
+
     "plugins": ["disqus"],
-    "pluginsConfig": {
-        "disqus": {
+
+    "pluginsConfig": 
+    	{  
+        "disqus": 
+        	{
             "shortName": "gitbookbywzzlj"
-        }
-    }  
+       		}
+
+  		},
+
+
+  	"title":"wzzlj在OMOOC2py",
+  	"variables":{}
 }
