@@ -5,7 +5,7 @@
 >  由于 Github 本身的目录结构并不一定符合阅读的习惯，而且没有提供 pdf , ePUB, MOBI 等格式的转换下载。于是大家也还是习惯离线看文档。GitBook 就是解决这一问题。 GitBook 让你在保持在 Github 的书写习惯外，稍加配置，就能自动发布到GitBook 上，形成界面漂亮的电子书了（支持 html, pdf , ePUB, MOBI 等）。
 
 ## 安装gitbook环境
-首先安裝好   
+首先安裝好：   
 
 - [Node](https://nodejs.org/en/)  
 - npm(安装完Node后就有了)   
@@ -41,14 +41,15 @@
         2.4.2
    ``` 
 
-至此，gitbook环境安装成功！撒花～
+**至此，gitbook环境安装成功！撒花～**
+
+![image](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-9/73107951.jpg)
 
 
 
-
-## SUMMARY.md
-## 编译、运行和发布
-
-@wzzlj 9.30开坑
+```
+9.30开坑  
+10.09更新
+```
 
 参考[Gitbook中文解说](https://wastemobile.gitbooks.io/gitbook-chinese/content/)
