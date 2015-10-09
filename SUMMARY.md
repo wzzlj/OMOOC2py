@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [教学反转](0MOOC/README.md)
-   	* [[0wd0]](0MOOC/0wd0.md)
+   * [[0wd0]](0MOOC/0wd0.md)
        	* [Gitbook生态圈](0MOOC/gitbooksheng_tai_quan.md)  
 			* [配置gitbook](0MOOC/peizhigitbook.md)
 			* gitbook与github的羁绊
