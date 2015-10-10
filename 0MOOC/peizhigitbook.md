@@ -8,19 +8,19 @@
 首先安裝好：   
 
 - [Node](https://nodejs.org/en/)  
-- npm(安装完Node后就有了)   
+- npm (安装完 Node 后就有了)
  
 
-### 通过npm安装gitbook
+### 通过 npm 安装 Gitbook
 
-1. 安装前，需要注意的是Mac需要获取root权限  
+1. 安装前，需要注意的是 Mac 需要获取 root 权限  
 `sudo －s` 
 
-2. 安装gitbook-cli  
-   如果之前安装了旧版gitbook并出现错误信息的话，记得先执行  
+2. 安装 gitbook-cli   
+   > 如果之前安装了旧版 Gitbook 并出现错误信息的话，记得先执行  
    `npm uninstall -g gitbook`
 
-   而后执行  
+   执行  
    `npm install gitbook-cli -g`  
    
    等待转圈圈一会儿～
@@ -34,8 +34,7 @@
    如果执行  
    `gitbook versions`
 
-   显示      	
-	 
+   显示      	 
    ```
    GitBook Versions Installed:
         2.4.2
@@ -47,9 +46,10 @@
 
 
 
-```
-9.30开坑  
-10.09更新
-```
+## 进展
+150930 开坑  
+151009 更新
 
-参考[Gitbook中文解说](https://wastemobile.gitbooks.io/gitbook-chinese/content/)
+
+## 参考
+[Gitbook中文解说](https://wastemobile.gitbooks.io/gitbook-chinese/content/)

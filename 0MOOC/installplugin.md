@@ -1,6 +1,6 @@
 #安装插件plugin和主题theme
 
-一旦你发现你需要的插件`gitbook-plugin-Name`或主题`gitbook-theme-Name`，在 `book.json` 添加:
+一旦你发现你需要的插件 `gitbook-plugin-Name` 或主题 `gitbook-theme-Name` ，在  `book.json` 添加:
    
     {
       "plugins": ["Name"]

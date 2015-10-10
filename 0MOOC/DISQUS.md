@@ -1,10 +1,10 @@
-# 为gitbook加上评论功能--DISQUS
+# 为Gitbook加上评论功能——Disqus
 
 ## 背景
 
 Disqus 是一个非常流行的为网站集成评论系统的工具，同样，gitbook 也可以集成 disqus 以便可以和读者交流。
 
-首先，需要在 [Disqus](https://disqus.com/) 上注册一个账号，然后添加一个 website，这会获得一个关键字`shortName`，然后在集成时配置这个关键字即可。
+首先，需要在 [Disqus](https://disqus.com/)  上注册一个账号，然后添加一个 website，这会获得一个关键字 `shortName` ，然后在集成时配置这个关键字即可。
 
 ## 安装
 可以参考 [插件项目主页](https://github.com/GitbookIO/plugin-disqus) 来安装，命令如下：
@@ -12,7 +12,7 @@ Disqus 是一个非常流行的为网站集成评论系统的工具，同样，g
     $ npm install gitbook-plugin-disqus -g
     
 ## 配置
-修改 书库根目录下的`book.json` 配置文件，添加插件的配置内容：
+修改 书库根目录下的 `book.json` 配置文件，添加插件的配置内容：
 
 ````
 {
@@ -39,5 +39,6 @@ Disqus 是一个非常流行的为网站集成评论系统的工具，同样，g
    
    
 
-----
-`2015.10.09`by wzzlj
+## 进展
+- 151009 创建
+- 151010 更新排版
