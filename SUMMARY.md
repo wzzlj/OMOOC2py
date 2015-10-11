@@ -18,5 +18,7 @@
    * [0w](_src/om2py0w/README.md) 
 * [素材 (draft)](draft/README.md)
    * [教程该怎么写](draft/how2tutorial.md)
+* [问题解决](error/README.md)
+   * [151011](error/permission.md)
 * [有关](ABOUT.md)
 
