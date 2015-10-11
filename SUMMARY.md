@@ -10,6 +10,7 @@
       * [Gitbook 与 Github 的羁绊](0MOOC/gitbook-hub.md)
       * [为 Gitbook 加上评论功能](0MOOC/DISQUS.md)
       * [安装插件 plugin 和主题 theme ](0MOOC/installplugin.md)
+   * [[0wd5]立即开始编程](0MOOC/0wd5.md)
 * [基础旋进](1sTry/README.md)
 * [迭代作品](2nDev/README.md)
 * [人生首秀](3rDemo/README.md)
