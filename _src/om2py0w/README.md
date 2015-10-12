@@ -5,7 +5,7 @@
 - py 调用
 
 
-````    
+```python
 
 # _*_ coding: utf-8 _*_
 # Quick Python Script Explanation for Progeammers
@@ -50,7 +50,7 @@ def foo(param1,secondParam):
 if __name__=='__main__':
 	main()
 	
-````
+```
 
 
 - CLI:
