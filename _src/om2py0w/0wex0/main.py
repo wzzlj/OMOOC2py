@@ -23,7 +23,7 @@ def main():
 		
 	print '数到10'
 	for i in range(10):
-		print i
+		print i+1
 
 def foo(param1,secondParam):
 	res = param1+secondParam
