@@ -39,8 +39,10 @@
 	 `"server_host": "127.0.0.1"`   
 	修改为  
 	` "server_host": "192.168.1.100"`  
-	`192.168.1.100`是你本机局域网内的 IP 地址。  
+	`192.168.1.100`是你本机局域网内的 IP 地址。
+
 - 这样就可以实现同一局域网下 **不同设备** 的实时预览，比如在 ipad 中输入对应地址，效果炸裂！  
-		![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-17/54643213.jpg)
+	![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-17/54643213.jpg)
+
 - 通过最新的 Ei Capitan 的特性，还可以实现双屏实时预览~
-		![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-17/30822344.jpg)
+	![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-17/30822344.jpg)
