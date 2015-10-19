@@ -4,7 +4,7 @@
 
 1. 下载文件 [daily.zip](https://github.com/wzzlj/OMOOC2py/raw/master/_src/om2py0w/0wex1/daily.zip)
 
-2. 解压之任意目录
+2. 解压至任意目录
 
 3. 在此目录下运行终端
 - `python main.py write` 为写日记
