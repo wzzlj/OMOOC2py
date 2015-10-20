@@ -44,7 +44,7 @@ elif writeread == 'read':
     print "It's read."
 ```
 
-- 运行结果
+- 运行结果  
 ![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-19/15179897.jpg)
 
 ### 3. 初步实现『写日记』功能
@@ -75,7 +75,7 @@ def write(target):
     else:
         print "不保存..."
 ```
-- 运行
+- 运行  
 ![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-19/69000263.jpg)
 ![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-19/83364070.jpg)
 
@@ -94,7 +94,7 @@ elif writeread == 'read':
 
 ![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-19/88378122.jpg)
 
-### 5.持续交互
+### 5. 持续交互
 
 > 在记录一行日记后可以选择继续写还是退出。
 
@@ -117,3 +117,41 @@ while ct == 'y' or ct == 'Y': # 当输入不是 y 的时候退出循环
 # 迭代
 
 - [1wd1]完成初步设想
+
+---
+## 完善优化，添加新功能
+
+### 6. 添加初始化日记功能
+
+- 用到 `truncate` 和 `w` 模式  
+```python
+elif writeread.lower() == 'i':  # 如果命令参数是 i，则初始化日记
+    target = open('daily.txt','w')
+    confirm = raw_input('警告！将初始化日记！是否继续(y/n)？ ')
+
+    if confirm.lower() == 'y':
+        target.truncate()
+        print "初始化完毕..."
+```
+
+- `lower()`是 python 为 string 对象提供的大小写转换功能的其中一个命令  
+
+  - 其他的还有转换成大写的 `upper()` ，首字母大写其余小写的 `capitalize()` 方法，以及所有单词首字母大写，其余小写的 `title()` 方法。
+
+- 运行  
+![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-20/44210153.jpg)
+
+### 7. 自动添加时间
+使用 `time` 模组
+```python
+localtime = time.asctime( time.localtime( time.time()))
+target.write("[%s]\t" % localtime)
+```
+
+
+![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-20/73509067.jpg)
+
+---
+# 迭代
+
+- [1wd2]添加『初始化日记』功能，『自动添加时间』功能，优化代码。
