@@ -28,7 +28,7 @@ def write(target):
 
 
 if writeread.lower() == 'w':  # 如果命令参数是 w，则进入写日记模式，lower 讲字符全部转换为小写
-    target = open('daily.txt','a') #以追加的模式打开文件
+    target =  file('daily.txt','a') #以追加的模式打开文件
     print "请记录日记内容："
     ct = 'y' # 初始化 ct
     while ct.lower() == 'y' : # 当输入不是 y 时退出循环,
@@ -46,12 +46,13 @@ elif writeread.lower() == 'r':   # 如果命令参数是 r，则进入读日记�
 
 
 elif writeread.lower() == 'i':  # 如果命令参数是 i，则初始化日记
-    target = open('daily.txt','w')
+    
     confirm = raw_input('警告！将初始化日记！是否继续(y/n)？ ')
 
     if confirm.lower() == 'y':
-        target.truncate()
+        target = file('daily.txt','w')
         print "初始化完毕..."
+        target.close()
 
 else:
     print "写日记请输入 w，读日记请输入 r，初始化日记请输入 i"

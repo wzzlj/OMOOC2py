@@ -53,7 +53,8 @@ elif writeread == 'read':
   - 追加模式`'a'`确保每次写入的是新的一行
 ```python
 if writeread == 'write':
-    target = open('daily.txt','a') #以追加的模式打开文件
+    #target = open('daily.txt','a') #以追加的模式打开文件
+    target = file('daily.txt','a') # 修改 open 为 file
     print "请记录日记内容："
     write(target)
     target.close()
@@ -113,26 +114,38 @@ while ct == 'y' or ct == 'Y': # 当输入不是 y 的时候退出循环
 
 ![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-19/58103628.jpg)
 
----
-# 迭代
 
-- [1wd1]完成初步设想
-
----
 ## 完善优化，添加新功能
 
 ### 6. 添加初始化日记功能
 
-- 用到 `truncate` 和 `w` 模式  
+- 用到`w` 模式  
 ```python
 elif writeread.lower() == 'i':  # 如果命令参数是 i，则初始化日记
-    target = open('daily.txt','w')
+    
     confirm = raw_input('警告！将初始化日记！是否继续(y/n)？ ')
 
     if confirm.lower() == 'y':
-        target.truncate()
+        target = file('daily.txt','w')
         print "初始化完毕..."
+        target.close('daily.txt')
 ```
+
+
+#### ~ 小贴士：文件操作 ~  
+- `open('路径+文件名','模式')`或 `file('路径+文件名','模式')`
+- 区别在于用 open 函数，文件必须已经存在，用 file 函数，文件存在则打开，不存在则创建
+- 常用的模式和功能
+
+模式 | 功能
+----|-----
+w|以写方式打开，若文件存在，会先清空，后创建
+a|以追加模式打开，必要时创建新文件
+r|以只读模式打开
+r+|以读写模式打开
+w+|以读写模式打开，参见 w
+a+|以读写模式打开，参见 a
+
 
 - `lower()`是 python 为 string 对象提供的大小写转换功能的其中一个命令  
 
@@ -151,7 +164,9 @@ target.write("[%s]\t" % localtime)
 
 ![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-20/73509067.jpg)
 
+
 ---
 # 迭代
 
+- [1wd1]完成初步设想
 - [1wd2]添加『初始化日记』功能，『自动添加时间』功能，优化代码。
