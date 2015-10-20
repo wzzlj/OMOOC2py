@@ -126,15 +126,14 @@ elif writeread.lower() == 'i':  # 如果命令参数是 i，则初始化日记
     confirm = raw_input('警告！将初始化日记！是否继续(y/n)？ ')
 
     if confirm.lower() == 'y':
-        target = file('daily.txt','w')
+        target = open('daily.txt','w')
         print "初始化完毕..."
-        target.close('daily.txt')
+        target.close()
 ```
 
 
 #### ~ 小贴士：文件操作 ~  
-- `open('路径+文件名','模式')`或 `file('路径+文件名','模式')`
-- 区别在于用 open 函数，文件必须已经存在，用 file 函数，文件存在则打开，不存在则创建
+- `open('路径+文件名','模式')`
 - 常用的模式和功能
 
 模式 | 功能
