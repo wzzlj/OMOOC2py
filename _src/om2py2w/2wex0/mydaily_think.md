@@ -12,18 +12,18 @@ from Tkinter import *  # 首先把 Tkinter 模块导入
 class Application(Frame):  # 基本框架
 
     def __init__(self, master=None):
-	        Frame.__init__(self, master)
-			        self.pack()
-					        self.createWidgets()
+    Frame.__init__(self, master)
+    self.pack()
+    self.createWidgets()
 
-								def createWidgets(self):   # 组件
+    def createWidgets(self):   # 组件
 
-								app = Application()
+    app = Application()
 # 设置窗口标题:
-								app.master.title('Hello World')
+    app.master.title('Hello World')
 # 主消息循环:
-								app.mainloop()
-								```
+    app.mainloop()
+```
 
 ## 三、添加组件
 
@@ -41,7 +41,7 @@ class Application(Frame):  # 基本框架
 
 ```python
     self.Input = Entry(self)
-	    self.Input.pack()
+    self.Input.pack()
 		```
 
 #### 2. Button 组件
@@ -51,15 +51,15 @@ class Application(Frame):  # 基本框架
 ```python
 # 设置一个用来保存的 Button
 	self.saveButton = Button(self, text='保存', command=self.write)
-		self.saveButton.pack()
+	self.saveButton.pack()
 
 # 定义一个函数写入日记本
 def write(self):
     target = open('daily.log','a')    # 以追加模式打开日记
-	    line = self.Input.get()    # 获取输入的文字
-		    target.write(line + '\n')    # 将文字写入
-			    target.close()    # 关闭日记本
-				```
+    line = self.Input.get()    # 获取输入的文字
+    target.write(line + '\n')    # 将文字写入
+    target.close()    # 关闭日记本
+	```
 
 ### 读取日记需要的组件
 
@@ -69,11 +69,13 @@ Label 组件用来在窗口上显示文字内容。
 ```python
 def read(self):
     target = open('daily.log','r')
-	    content = target.read()
-		    return content
+    content = target.read()
+    return content
 			```
-			- 用 Label 取出读取的内容，打印在主窗口上
-			```python
-			self.label1 = Label(self, text = self.read())
-			self.label1.pack()
-			```
+
+- 用 Label 取出读取的内容，打印在主窗口上
+
+```python
+    self.label1 = Label(self, text = self.read())
+    self.label1.pack()
+```
