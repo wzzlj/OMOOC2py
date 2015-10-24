@@ -17,3 +17,5 @@ bulls_on_parade = Song(["They rally around the family",
 happy_bday.sing_me_a_song()
 
 bulls_on_parade.sing_me_a_song()
+
+print happy_bday.lyrics
