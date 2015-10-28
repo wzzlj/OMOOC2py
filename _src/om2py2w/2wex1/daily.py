@@ -2,6 +2,7 @@
 # __author__ = 'zhulijian'
 
 from Tkinter import *
+import os 
 from PIL import Image, ImageTk  # easy_install pil
 
 # 确保中文输入能正确传送
@@ -94,8 +95,11 @@ def main():
     global im
     image = Image.open("banner.png")
     im = ImageTk.PhotoImage(image)
+    if os.path.isfile('test.txt')==False:
+        f = open('daily.log','w')
+        f.close()
     app = Application(master = root)
-    app.master.title('简单日记本')
+    app.master.title('简单日记本2.0')
     app.mainloop()
 
 if __name__ == "__main__":
