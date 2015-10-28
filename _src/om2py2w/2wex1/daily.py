@@ -95,7 +95,7 @@ def main():
     global im
     image = Image.open("banner.png")
     im = ImageTk.PhotoImage(image)
-    if os.path.isfile('test.txt')==False:
+    if os.path.isfile('test.txt')==False:  # 检查是否存在 daily 文件
         f = open('daily.log','w')
         f.close()
     app = Application(master = root)

@@ -10,9 +10,16 @@
 
 - 安装 PIL 模块：`easy_install pil`
 - 运行程序：`python daily.py` 
+<<<<<<< HEAD
 
 ## 界面
 
 ![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-28/81884108.jpg)
 
  
+=======
+ 
+## 界面
+
+![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-28/81884108.jpg)
+>>>>>>> 13ef53704eab85b6e82ced06c97392d3b5a49e25
