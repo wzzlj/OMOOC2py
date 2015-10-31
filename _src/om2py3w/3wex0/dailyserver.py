@@ -5,6 +5,7 @@ import sys
 from thread import *
 import os
 import time
+
 reload(sys)  
 sys.setdefaultencoding('utf-8') 
 
@@ -32,18 +33,19 @@ def wrc(command, data): #文件处理
 def createserver():
     port = 8888
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    print '服务器启动中...'
+    print '服务器启动...'
     try:
         s.bind(("",port))    #创建服务器，开始监听端口
     except socket.error, msg:
         print str(msg[0])
         sys.exit()
-    print '端口开放：',port
+    print '按 control+c 退出服务器，，，'
 
     while 1:
         data, addr = s.recvfrom(1024)   #接收内容并打印到屏幕上
-        localtime = '['+time.asctime(time.localtime(time.time()))+']'
-        data2 = localtime + ' ' + data
+        localtime = time.asctime(time.localtime(time.time()))
+        localtime = localtime.split(' ')
+        data2 = '['+localtime[4]+'] '+data
         re = wrc(data, data2)   #得到文件处理函数返回的内容
         s.sendto(re, addr)  #将返回的内容推送回客户端
         print re    #打印到服务端的屏幕上，用以检查
