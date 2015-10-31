@@ -3,7 +3,7 @@
 
 from Tkinter import *
 import os 
-from PIL import Image, ImageTk  # easy_install pil
+from PIL import Image, ImageTk  # easy_install pil 识别其他图片
 
 # 确保中文输入能正确传送
 import sys
@@ -16,7 +16,7 @@ root.geometry('400x420+400+400')
 class Application(Frame):
 
     def __init__(self, master=None):
-        Frame.__init__(self, master, bg='white')
+        Frame.__init__(self, master, bg='white')    # 一个 frame 框架
         self.pack()
         self.createWidgets()
 
@@ -24,12 +24,12 @@ class Application(Frame):
     def write(self, sefl2):
         target = open('daily.log','a')
         line = self.Input.get() + '\n'
-        self.Input.delete(0,END) # 保存后清空文字框
-        self.readtext.config(state = NORMAL)
-        self.readtext.insert(END,line,'center')
-        self.readtext.see(END)
-        self.readtext.config(state = DISABLED)
-        target.write(line)
+        self.Input.delete(0,END)    # 保存后清空文字框
+        self.readtext.config(state = NORMAL)    # 取消 Text 组件只读模式
+        self.readtext.insert(END,line,'center') # 在文字最后添加 line 的内容
+        self.readtext.see(END)  # 指向文字最后
+        self.readtext.config(state = DISABLED)  # 打开 Text 组件的只读模式
+        target.write(line)  # 写入到文件内
         target.close()
 
 
@@ -52,7 +52,6 @@ class Application(Frame):
         self.gridWidgets()
     
     def banner(self):
-        
         self.banner = Canvas(self, width=350, height=70, bg='white')
         self.banner.create_image(175,40,image=im)
 
@@ -95,7 +94,7 @@ def main():
     global im
     image = Image.open("banner.png")
     im = ImageTk.PhotoImage(image)
-    if os.path.isfile('test.txt')==False:  # 检查是否存在 daily 文件
+    if os.path.isfile('daily.log')==False:  # 检查是否存在 daily 文件
         f = open('daily.log','w')
         f.close()
     app = Application(master = root)

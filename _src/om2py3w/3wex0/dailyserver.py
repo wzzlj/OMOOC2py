@@ -5,30 +5,29 @@ import sys
 from thread import *
 import os
 import time
+reload(sys)  
+sys.setdefaultencoding('utf-8') 
 
 def wrc(command, data): #文件处理
     if os.path.isfile('daily.log') == False:    #检查daily.log，没有就创建
         f = open('daily.log','w')
         f.close()
+        return '---创建daily.log---'
     
-    elif command.lower() == '-r':
+    elif command.lower() == '-r':   #输入-r命令后读取日记
         f = open('daily.log','r')
         reply =  '-'*10+'读取日记'+'-'*10+'\n'+f.read()+'-'*28
-        print reply
         return reply
-    elif command.lower() == '-c':
+    
+    elif command.lower() == '-c':   #输入-c命令后初始化日记
         f = open('daily.log','w')
+        return '---初始化完毕---!'
 
-    else:
+    else:                           #没有命令则执行写入文件
         f = open('daily.log','a')
         f.write(data + '\n')
         f.close()
-
-def readlog():
-    f = open('daily.log','r')
-    reply = f.read()
-    return reply
-    f.close()
+        return data
 
 def createserver():
     port = 8888
@@ -44,9 +43,10 @@ def createserver():
     while 1:
         data, addr = s.recvfrom(1024)   #接收内容并打印到屏幕上
         localtime = '['+time.asctime(time.localtime(time.time()))+']'
-        data2 = localtime + '\n----> ' + data
-        print data2
-        wrc(data, data2)
+        data2 = localtime + ' ' + data
+        re = wrc(data, data2)   #得到文件处理函数返回的内容
+        s.sendto(re, addr)  #将返回的内容推送回客户端
+        print re    #打印到服务端的屏幕上，用以检查
 
     s.close()
 

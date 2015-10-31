@@ -16,6 +16,7 @@
       * [配置 python 常用环境](0MOOC/0wd5/peizhi_python.md)
       * [简单日记脚本](_src/om2py0w/0wex1/think.md)
       * [日记本桌面化](_src/om2py2w/2wex0/mydaily_think.md)
+      * [简单日记本网络版](_src/om2py3w/3wex0/think.md)
 * [基础旋进](1sTry/README.md)
 * [迭代作品](2nDev/README.md)
 * [人生首秀](3rDemo/README.md)
