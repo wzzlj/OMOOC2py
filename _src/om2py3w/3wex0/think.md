@@ -8,10 +8,10 @@
 
 - 首先最简单的就是创建一个 Socekt
   
-  ``` python
-  import socket   
-  s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-  ```
+``` python  
+import socket   
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+```
   
   上述代码用了下面两个属性来创建 Socket：
   
@@ -19,18 +19,18 @@
   - 类型：SOCK_STREAM(使用 TCP传输控制协议)
   - 如果函数失败，还需要处理异常。当当当当~try 隆重登场！
   
-  ``` python
-  import socket
-  import sys
-  
-  try:
-      s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-  except socket.error, msg:
-      print 'Faild to create socket'
-      sys.exit();
-  print 'socket Created'
-  ```
-  
+``` python
+import socket
+import sys
+
+try:
+    s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+except socket.error, msg:
+    print 'Faild to create socket'
+    sys.exit();
+print 'socket Created'
+```
+
   ​
   
 - 下一步就是使用这个 Socket 来连接到服务器
@@ -38,18 +38,18 @@
   - 首先要获取远程主机的 IP 地址，指定 port。
   - python 里获取主机地址 ip 的方法是`socket.gethostbyname(name)`相当的简单啊~
   
-  ``` python
-  host = 'www.iomooc.com'
-  port = 80
-  try:
-      ip = socket.gethostbyname(host)
-  except socket.gaierror:
-      print 'Hostname could not be resolved.'
-      sys.exit()
-  
-  print 'Connecting ' + host + ':' + ip 
-  ```
-  
+``` python
+host = 'www.iomooc.com'
+port = 80
+try:
+    ip = socket.gethostbyname(host)
+except socket.gaierror:
+    print 'Hostname could not be resolved.'
+    sys.exit()
+
+print 'Connecting ' + host + ':' + ip 
+```
+
   - 运行一下
   
   ![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-30/91591815.jpg)
@@ -62,26 +62,26 @@
   
 - 发送数据：`sandal` 函数用于简单的发送数据
   
-  ``` python
-  message = 'GET / HTTP/1.1\r\n\r\n' # 用来获取网站首页的内容
-  
-  try:
-      s.sendall(message)
-  except socket.error:
-      print 'Send Failed'
-      sys.exit()
-  
-  print 'Message Send Successfully.'
-  ```
-  
+``` python
+message = 'GET / HTTP/1.1\r\n\r\n' # 用来获取网站首页的内容
+
+try:
+    s.sendall(message)
+except socket.error:
+    print 'Send Failed'
+    sys.exit()
+
+print 'Message Send Successfully.'
+```
+
 - 接收数据：`recv` 函数用于从 socket 接收数据
-  
-  ``` python
-  reply = s.recv(4096)
-  
-  print reply
-  ```
-  
+
+``` python
+reply = s.recv(4096)
+
+print reply
+```
+
   - 运行一下~看看芝麻星的首页是啥~
   
   ![](http://7xn3v1.com1.z0.glb.clouddn.com/15-10-30/18614593.jpg)
@@ -90,10 +90,10 @@
   
 - 最后是关闭 socket
   
-  ``` python
-  s.close()
-  ```
-  
+``` python
+s.close()
+```
+
 - 回顾一下：
   
   1. 创建 Socket
