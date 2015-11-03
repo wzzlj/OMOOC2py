@@ -19,6 +19,8 @@
    * [日记本桌面化](_src/om2py2w/2wex0/mydaily_think.md)
    * [简单日记本网络版](_src/om2py3w/3wex0/think.md)
    * [Bottle 框架学习（一）](1sTry/bottle/bottle.md)
+   * [Bottle 框架学习（二）](1sTry/bottle/bottle2.md)
+   * [Python 知识点补充](Begin/Python补充学习.md)
 * [基础旋进](1sTry/README.md)
 * [迭代作品](2nDev/README.md)
 * [人生首秀](3rDemo/README.md)
